@@ -1,0 +1,27 @@
+﻿@model Employee
+@{
+   ViewBag.Title =  $"编辑 {Model.Name}";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit @Model.Name</h1>
+
+    <form asp-action="Edit" method="post">
+        <div>
+            <label asp-for="Name">员工姓名</label>
+            <input asp-for="Name"/>
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <input type="submit" value="保存"/>
+        </div>
+    </form>
+</body>
+</html>

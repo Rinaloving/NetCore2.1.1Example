@@ -1,0 +1,30 @@
+﻿@model Employee
+@{
+    ViewBag.Title = "Create";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h1>新增员工</h1>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.LabelFor(m=>m.Name)
+            @Html.EditorFor(m=>m.Name)
+            @Html.ValidationMessageFor(m=>m.Name)
+        </div>
+
+        <div>
+            <input type="submit" value="保存"/>
+        </div>
+
+    }
+
+</body>
+</html>

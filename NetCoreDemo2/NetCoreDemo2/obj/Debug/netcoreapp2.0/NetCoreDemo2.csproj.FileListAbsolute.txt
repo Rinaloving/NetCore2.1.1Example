@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\bin\Debug\netcoreapp2.0\NetCoreDemo2.deps.json
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\bin\Debug\netcoreapp2.0\NetCoreDemo2.runtimeconfig.json
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\bin\Debug\netcoreapp2.0\NetCoreDemo2.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\bin\Debug\netcoreapp2.0\NetCoreDemo2.dll
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\bin\Debug\netcoreapp2.0\NetCoreDemo2.pdb
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.dll
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.pdb
+C:\Users\Administrator\source\repos\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.csprojAssemblyReference.cache
