@@ -7,40 +7,44 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+  
     <title>Home 控制器下的 Index 方法</title>
 </head>
 <body>
-  
-    <h1>职工列表</h1>
-    
+
 
     <div style="color:palevioletred">
         @*@Model.Name*@
     </div>
-    <table>
-        <tr>
-            <td>ID</td>
-            <td>姓名</td>
-            <td class="txt-left">操作</td>
-        </tr>
+    <table class="layui-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th class="txt-left">操作</th>
+            </tr>
+        </thead>
         @foreach (var employee in Model.Employees)
         {
-        <tr>
-            <!--绝对路径的写法是最蠢的，不推荐-->
-            @*<td><a href="/home/Detail/@employee.ID">@employee.ID</a></td>
-            <td>@Html.ActionLink(employee.ID.ToString(),"Detail","","","","", new { id = employee.ID }, null)</td>*@
-             @*<td><a asp-action="Detail" asp-route-Id="@employee.ID">详情</a></td>*@
-            <td>@employee.ID</td>
-            <td>@employee.Name</td>
-            <td class="txt-left"><a asp-action="Detail" asp-route-Id="@employee.ID">详情</a>&nbsp;<a asp-controller="Home" asp-action="Edit"
-                                                                                                   asp-route-id="@employee.ID">编辑</a></td>
-        </tr>
+            <tr>
+                <!--绝对路径的写法是最蠢的，不推荐-->
+                @*<td><a href="/home/Detail/@employee.ID">@employee.ID</a></td>
+                    <td>@Html.ActionLink(employee.ID.ToString(),"Detail","","","","", new { id = employee.ID }, null)</td>*@
+                @*<td><a asp-action="Detail" asp-route-Id="@employee.ID">详情</a></td>*@
+                <td>@employee.ID</td>
+                <td>@employee.Name</td>
+                <td class="txt-left">
+                    <a class="layui-btn layui-btn-primary layui-btn-xs" asp-action="Detail" asp-route-Id="@employee.ID">详情</a>&nbsp;
+                    <a class="layui-btn layui-btn-xs"asp-controller="Home" asp-action="Edit"asp-route-id="@employee.ID">编辑</a>
+                </td>
+            </tr>
 
         }
     </table>
     <br />
     <p><a asp-action="Create">新增员工</a></p>
-    
+
+
 
 </body>
 </html>
