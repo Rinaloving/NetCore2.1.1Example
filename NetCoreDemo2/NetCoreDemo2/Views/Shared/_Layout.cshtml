@@ -4,6 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/css/layui.css" rel="stylesheet" />
+    <link href="~/css/laydate.css" rel="stylesheet" />
+    <link href="~/css/layer.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-3.3.1.js"></script>
     <script src="~/scripts/layui.all.js"></script>
     <title>@ViewBag.Title</title>
 
@@ -23,7 +26,7 @@
         }
         else
         {
-            <li class="layui-nav-item layui-layout-right"><a asp-controller="Account" asp-action="Login">登录</a></li>
+            <li class="layui-nav-item "><a asp-controller="Account" asp-action="Login">登录</a></li>
             <li class="layui-nav-item layui-layout-right"> <a asp-controller="Account" asp-action="Signup">注册</a></li>
 
         }

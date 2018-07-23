@@ -1,6 +1,7 @@
 ﻿@model NetCoreDemo2.Controllers.AccountController.LoginViewModel
 @{
     ViewBag.Title = "Login";
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -8,34 +9,66 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript">
+        //显示复选框
+        $(function () {
+            layui.use(['form','jquery','laydate'], function () {
+                var form = layui.form;
+                form.render();
+                form.render('select'); //刷新select
+
+            });
+            
+        })
+
+
+        //$(document).ready(function () {
+        //    alert("第二种");
+        //});
+
+    </script>
     <title>Login</title>
 </head>
+
 <body>
-    <h2>登录</h2>
-    <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Model.ReturnUrl">
-        <div asp-validation-summary="ModelOnly"></div>
 
-        <div>
-            <label asp-for="Username"></label>
-            <input asp-for="Username"/>
-            <span asp-validation-for="Username"></span>
-        </div>
+        <form class="layui-form layui-form-pane " style="margin-left:35%; margin-top:50px;" lay-fi50lter="select" method="post" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Model.ReturnUrl">
+            <div asp-validation-summary="ModelOnly"></div>
 
-        <div>
-            <label asp-for="Password"></label>
-            <input asp-for="Password"/>
-            <span asp-validation-for="Password"></span>
-        </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" asp-for="Username"></label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" asp-for="Username" />
+                </div>
+                <span asp-validation-for="Username"></span>
+            </div>
 
-        <div>
-            <label asp-for="RememberMe"></label>
-            <input asp-for="RememberMe"/>
-            <span asp-validation-for="RememberMe"></span>
-        </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" asp-for="Password"></label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" asp-for="Password" />
+                </div>
+                <span asp-validation-for="Password"></span>
+            </div>
 
-        <input type="submit" value="登录"/>
+            <div class="layui-form-item">
+                <label class="layui-form-label">RememberMe</label>
+                <div class="layui-input-inline">
+                    <input type="checkbox" name="" title="记住" asp-for="RememberMe" checked />
+                </div>
+                <span asp-validation-for="RememberMe"></span>
+            </div>
+
+            @*<input type="submit" value="登录" />*@
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+
+        </form>
 
 
-    </form>
 </body>
 </html>

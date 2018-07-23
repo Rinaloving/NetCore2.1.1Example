@@ -19,4 +19,3 @@ D:\github\NetCore2.1.1Example\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\
 D:\github\NetCore2.1.1Example\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.AssemblyInfo.cs
 D:\github\NetCore2.1.1Example\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.dll
 D:\github\NetCore2.1.1Example\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.pdb
-D:\github\NetCore2.1.1Example\NetCoreDemo2\NetCoreDemo2\obj\Debug\netcoreapp2.0\NetCoreDemo2.csprojAssemblyReference.cache
