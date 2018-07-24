@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -11,19 +11,25 @@
     <title>Home 控制器下的 Detail 方法</title>
 </head>
     <body>
-        <h1>欢迎!</h1>
-        <div>这个消息来自 Home 控制器下的 Detail 的视图文件 Detail.cshtml</div>
-        <p><a href="/">返回首页</a></p>
-        <table>
-            <tr>
-                <td>员工编号</td>
-                <td>@Model.ID</td>
-            </tr>
-            <tr>
-                <td>员工姓名</td>
-                <td>@Model.Name</td>
-            </tr>
+        <table class="layui-table">
+            <colgroup>
+                <col width="150">
+                <col width="200">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>员工编号</th>
+                    <th>员工姓名</th>     
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.ID</td>
+                    <td>@Model.Name</td>
+                </tr>
+            </tbody>
         </table>
-        <p><a href="/">返回首页</a></p>
+
+        <p  ><a  href="/" class="layui-btn">返回首页</a></p>
     </body>
 </html>

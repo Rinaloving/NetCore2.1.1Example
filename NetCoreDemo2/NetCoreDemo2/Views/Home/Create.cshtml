@@ -12,20 +12,23 @@
     <title>Create</title>
 </head>
 <body>
-    <h1>新增员工</h1>
-    @using (Html.BeginForm())
-    {
-        <div>
-            @Html.LabelFor(m=>m.Name)
-            @Html.EditorFor(m=>m.Name)
-            @Html.ValidationMessageFor(m=>m.Name)
-        </div>
+        <form class="layui-form layui-form-pane " style="margin-left:35%; margin-top:50px;" asp-action="Create" method="post">
+            <div class="layui-form-item">
+                <label class="layui-form-label">员工姓名</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" asp-for="Name" />
+                </div>
+                <span asp-validation-for="Name"></span>
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
 
-        <div>
-            <input type="submit" value="保存"/>
-        </div>
+            <div class="layui-form-item">
+                <div class="layui-col-md4">
+                    <button class="layui-btn layui-btn-fluid" lay-submit>保存</button>
+                </div>
+            </div>
 
-    }
+        </form>
 
-</body>
+    </body>
 </html>

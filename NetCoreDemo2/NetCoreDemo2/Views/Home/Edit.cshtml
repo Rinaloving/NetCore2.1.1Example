@@ -11,17 +11,19 @@
     <title>Edit</title>
 </head>
 <body>
-    <h1>Edit @Model.Name</h1>
-
-    <form asp-action="Edit" method="post">
-        <div>
-            <label asp-for="Name">员工姓名</label>
-            <input asp-for="Name"/>
-            <span asp-validation-for="Name"></span>
+    <form  class="layui-form layui-form-pane " style="margin-left:35%; margin-top:50px;" asp-action="Edit" method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label" asp-for="Name">员工姓名</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" asp-for="Name" />
+            </div>
+                <span asp-validation-for="Name"></span>
         </div>
-        <div>
-            <input type="submit" value="保存"/>
+        <div class="layui-form-item">
+            <div class="layui-col-md4">
+                <button class="layui-btn layui-btn-fluid" lay-submit>保存</button>
+            </div>   
         </div>
-    </form>
+</form>
 </body>
 </html>
